@@ -13,8 +13,9 @@
     <h1>STRONG PASSWORD GENERATOR</h1>
     <H2> GENERA UNA PASSWORD SICURA</H2>
     <div class="bg-light container-lg d-flex flex-column ">
+        <form action="password.php" method="get">
         <span>Lunghezza password :</span>
-        <input class="col-3" type="text" placeholder="inserire un numero">
+        <input class="col-3" type="text" placeholder="inserire un numero" name="number">
         <span> consenti ripetizioni di caratteri :</span>
         <input type="radio" id="positive" name="yes" value="1">
         <label for="positive">Sì</label>
@@ -27,6 +28,7 @@
         <input type="checkbox" id="symbols" name="simboli" value="2">
         <label for="symbols">Simboli</label><br><br>
         <button class="bg.primary col-1">Invia</button>
+    </form>
     </div>
 </body>
 
