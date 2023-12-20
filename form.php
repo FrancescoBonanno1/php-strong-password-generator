@@ -12,8 +12,8 @@
 <body class="bg-primary d-flex align-center flex-column">
     <h1>STRONG PASSWORD GENERATOR</h1>
     <H2> GENERA UNA PASSWORD SICURA</H2>
-    <div class="bg-light container-lg d-flex flex-column ">
-        <form action="password.php" method="get">
+    <div >
+        <form class="bg-light container-lg d-flex flex-column " action="password.php" method="get">
         <span>Lunghezza password :</span>
         <input class="col-3" type="text" placeholder="inserire un numero" name="number">
         <span> consenti ripetizioni di caratteri :</span>

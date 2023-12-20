@@ -9,13 +9,23 @@
 </head>
 
 <body>
-    <?php $number = $_GET["number"]; ?>
-    <?php $min = "0"; ?>
+    <?php $number =($_GET["number"]); ?>
+    <?php $min = "1"; ?>
     <?php $max = $number ; ?>
     <?php if ($number == intval($number, $base = 10)) {
         echo '<span>' . $number . '</span>';
     } else echo '<h1>' . "Questo non è un numero, sciocco" . '</h1>'; ?>
-    
+    <?php if($number > 0 && $number){
+        $password = str_shuffle($number);
+        echo '<h2>'."La tua password è:".'</h2>'. '<h2>'.$password.'</h2>';
+    } elseif(isset($_GET["lettere"])){
+        $letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $password = $password.str_shuffle($letters);
+        var_dump($letters);
+    }
+       
+    ;?>
+   
 </body>
 
 </html>
